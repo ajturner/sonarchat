@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <script type="module" src="https://js.arcgis.com/calcite-components/1.0.0-beta.97/calcite.esm.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/1.0.0-beta.97/calcite.css" />
+</head>
+
+<body>
+    <style>
+        #page-action {
+            border: 0px; 
+            bottom: 40px; 
+            right: 40px; 
+            float: none; 
+            margin: 0px; 
+            padding: 0px; 
+            position: fixed; 
+            z-index: 999;
+            color: white;
+            --calcite-ui-foreground-1: rgb(0 0 0 / 0);
+            --calcite-ui-foreground-2: rgb(0 0 0 / 0);
+            --calcite-ui-foreground-3: rgb(0 0 0 / 0);
+        }
+          .edit-action {
+            background: #007ABE;
+            width: 50px;
+            height: 50px; 
+            color: white;
+            border-radius: 50%;
+            display: inline-block;
+            --calcite-ui-icon-color: white;
+        }
+        .edit-action:hover {
+            background: #00619B;
+        }
+        .edit-action[active] {
+            background: #004874;
+        }
+        
+    </style>
+    <calcite-action-menu id="page-action" overlay-positioning="absolute" placement="auto">
+        <calcite-action
+          class="edit-action" 
+          slot="trigger"
+          text="Edit"
+          icon="pencil"
+          color="blue"
+          aria-controls="calcite-action-menu-a3b31257-38cb-5604-bafe-80cdfbe64e90-menu"
+          aria-expanded="false"
+          aria-haspopup="true"
+          id="edit-button"
+          appearance="solid"
+          scale="m"
+        ></calcite-action>
+        <calcite-action
+          text="Edit Layout"
+          icon="ungroup-layout-elements"
+          text-enabled=""
+          appearance="solid"
+          scale="m"
+          href="https://highearthorbit.com"
+        ></calcite-action>
+        <calcite-action
+          text="Manage Site"
+          icon="configure"
+          text-enabled=""
+          appearance="solid"
+          scale="m"
+        ></calcite-action>
+        <calcite-action
+          text="Share"
+          icon="share"
+          text-enabled=""
+          appearance="solid"
+          scale="m"
+        ></calcite-action>
+      </calcite-action-menu>
+      
+    <script>
+    // const embedModal = document.querySelector("calcite-modal");
+    // const hubIdentity = document.querySelector('hub-identity');
+    // hubIdentity.addEventListener('onSignin', event => {
+    //   console.log("hubIdentity signin", event)
+    //   location.reload();
+    // })
+    // hubIdentity.addEventListener('onSignout', event => {
+    //   console.log("hubIdentity signout", event)
+    //   location.reload();
+    // })
+
+    </script>
+</body>
+
+</html>

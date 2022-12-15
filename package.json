@@ -1,0 +1,20 @@
+{
+  "name": "hub-prototype-ux",
+  "version": "0.0.2",
+  "description": "Prototypes for embedding in Hub",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd src && static-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajturner/sonarchat.git"
+  },
+  "author": "Andrew Turner <aturner@esri.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ajturner/sonarchat/issues"
+  },
+  "homepage": "https://github.com/ajturner/sonarchat#readme"
+}
