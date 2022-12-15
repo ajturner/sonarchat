@@ -7,6 +7,9 @@
 
 <body>
     <style>
+        body {
+            background: yellow;
+        }
         #page-action {
             border: 0px; 
             bottom: 40px; 
@@ -21,7 +24,7 @@
             --calcite-ui-foreground-2: rgb(0 0 0 / 0);
             --calcite-ui-foreground-3: rgb(0 0 0 / 0);
         }
-          .edit-action {
+        .edit-action {
             background: #007ABE;
             width: 50px;
             height: 50px; 
@@ -29,6 +32,9 @@
             border-radius: 50%;
             display: inline-block;
             --calcite-ui-icon-color: white;
+        }
+        .edit-option {
+            background-color: white;
         }
         .edit-action:hover {
             background: #00619B;
@@ -53,7 +59,8 @@
           scale="m"
         ></calcite-action>
         <calcite-action
-          text="Edit Layout"
+        class="edit-option" 
+            text="Edit Layout"
           icon="ungroup-layout-elements"
           text-enabled=""
           appearance="solid"
@@ -61,6 +68,7 @@
           href="https://highearthorbit.com"
         ></calcite-action>
         <calcite-action
+        class="edit-option" 
           text="Manage Site"
           icon="configure"
           text-enabled=""
@@ -68,6 +76,7 @@
           scale="m"
         ></calcite-action>
         <calcite-action
+        class="edit-option" 
           text="Share"
           icon="share"
           text-enabled=""
